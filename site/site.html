@@ -54,22 +54,22 @@
     <h2>Skins <a href="#" class="view-more">View More</a></h2>
     <div class="grid">
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('skins1.jpg'); return false;">
+        <a href="images/rootdownload/skins1.jpg" download="skins1.jpg" title="Download Skin 1">
           <img src="images/skins1.jpg" alt="Skin 1">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('skins2.jpg'); return false;">
+        <a href="images/rootdownload/skins2.jpg" download="skins2.jpg" title="Download Skin 2">
           <img src="images/skins2.jpg" alt="Skin 2">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('skins3.jpg'); return false;">
+        <a href="images/rootdownload/skins3.jpg" download="skins3.jpg" title="Download Skin 3">
           <img src="images/skins3.jpg" alt="Skin 3">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('skins4.jpg'); return false;">
+        <a href="images/rootdownload/skins4.jpg" download="skins4.jpg" title="Download Skin 4">
           <img src="images/skins4.jpg" alt="Skin 4">
         </a>
       </div>
@@ -80,22 +80,22 @@
     <h2>Servers <a href="#" class="view-more">View More</a></h2>
     <div class="grid">
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('servers1.jpg'); return false;">
+        <a href="images/rootdownload/servers1.jpg" download="servers1.jpg" title="Download Server 1">
           <img src="images/servers1.jpg" alt="Server 1">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('servers2.jpg'); return false;">
+        <a href="images/rootdownload/servers2.jpg" download="servers2.jpg" title="Download Server 2">
           <img src="images/servers2.jpg" alt="Server 2">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('servers3.jpg'); return false;">
+        <a href="images/rootdownload/servers3.jpg" download="servers3.jpg" title="Download Server 3">
           <img src="images/servers3.jpg" alt="Server 3">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('servers4.jpg'); return false;">
+        <a href="images/rootdownload/servers4.jpg" download="servers4.jpg" title="Download Server 4">
           <img src="images/servers4.jpg" alt="Server 4">
         </a>
       </div>
@@ -106,41 +106,27 @@
     <h2>Texture Packs <a href="#" class="view-more">View More</a></h2>
     <div class="grid">
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('texturepacks1.jpg'); return false;">
+        <a href="images/rootdownload/texturepacks1.jpg" download="texturepacks1.jpg" title="Download Texture Pack 1">
           <img src="images/texturepacks1.jpg" alt="Texture Pack 1">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('texturepacks2.jpg'); return false;">
+        <a href="images/rootdownload/texturepacks2.jpg" download="texturepacks2.jpg" title="Download Texture Pack 2">
           <img src="images/texturepacks2.jpg" alt="Texture Pack 2">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('texturepacks3.jpg'); return false;">
+        <a href="images/rootdownload/texturepacks3.jpg" download="texturepacks3.jpg" title="Download Texture Pack 3">
           <img src="images/texturepacks3.jpg" alt="Texture Pack 3">
         </a>
       </div>
       <div class="placeholder">
-        <a href="#" onclick="downloadFile('texturepacks4.jpg'); return false;">
+        <a href="images/rootdownload/texturepacks4.jpg" download="texturepacks4.jpg" title="Download Texture Pack 4">
           <img src="images/texturepacks4.jpg" alt="Texture Pack 4">
         </a>
       </div>
     </div>
   </div>
 
-  <script>
-    function downloadFile(filename) {
-      var link = document.createElement('a');
-      link.href = 'images/rootdownload/' + filename; // Path to the download folder
-      link.setAttribute('download', filename); // Make it trigger download
-      var newWindow = window.open('about:blank', '_blank'); // Open a blank page
-
-      // Trigger the download in the new window
-      newWindow.document.body.appendChild(link);
-      link.click();
-      newWindow.document.body.removeChild(link);
-      newWindow.close(); // Close the window after the download is triggered
-    }
-  </script>
 </body>
 </html>
